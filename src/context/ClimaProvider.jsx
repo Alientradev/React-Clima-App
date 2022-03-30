@@ -26,7 +26,7 @@ const ClimaProvider = ({children}) => {
         try {
             // Obtener la latitud y la longitud apartir de la ciudad y el pais
             const { ciudad, pais } = datos
-            const appId = import.meta.env.VITE_API_KEY
+            const appId = '6f93f5fc48e95a96b146558032e0e739'
             const url = `http://api.openweathermap.org/geo/1.0/direct?q=${ciudad},${pais}&limit=1&appid=${appId}`
             const {data} = await axios(url)
             //Obtener el clima en base a la latitud y la longitud
